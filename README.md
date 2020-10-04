@@ -5,4 +5,4 @@ But for now i will docus on my other projects since this project have cosumes a 
 Cheers
 <br>
 
-_Life's Idol_ : **https://www.youtube.com/watch?v=vayVPiGM2cI**
+_Life's Idol_ : **https://www.youtube.com/watch?v=NO0xMhkrhpU**
