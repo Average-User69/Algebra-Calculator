@@ -1,0 +1,214 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: #222c3c;
+}
+
+#contentWrapper *{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+#contentWrapper{
+    display:flex;
+    flex-flow:column nowrap;
+    height: 70vh;
+    width: 60vw;
+    margin-top: 15vh;
+    margin-left: 20vw;
+    background-color: #989da6;
+    display:flex;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 5;
+}
+
+/*
+    Child of content wrapper    
+*/
+/*Input*/
+
+.operationContainer{
+    height:20%;
+    width:100%; 
+    background-color: cadetblue;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding:auto;
+    box-sizing: border-box;
+}
+
+/*
+    Input properties
+*/
+input{
+    height:100%;
+    width:100%;
+    background-color: cadetblue;
+    border:none;
+    display: block;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+input:focus{
+    color: cadetblue;
+    background-color: whitesmoke;
+    transition: 0.25s;
+    cursor: text;
+}
+
+input:hover{
+    transition: 0.5s;
+    transition-timing-function: ease;
+    color: cadetblue;
+    background-color: whitesmoke;
+}
+
+/*
+    User input cotainer
+*/
+.operationContainer{
+    display:flex;
+    flex-flow: row nowrap;
+    height: 16.6%;
+    box-sizing: border-box;
+}
+
+/*Output container*/
+.operationContainer>#calcContainer,#outputContainer{
+    width:50%;
+    height:100%;
+}
+
+#calcContainer{
+    background-color:inherit;
+    transition: 0.25s ease;
+    border-top: 2px #222c3c solid;
+    border-right: 2px #222c3c solid;
+    z-index: 10;
+    display: flex;
+    padding:0;
+    flex-flow: row nowrap;
+}
+/*Calculation option*/
+#toCalculate{
+    height: 100%;
+    width: 20%;
+    order: 1;
+    background-color: cadetblue;
+    border:none;
+    border-right: 2px #222c3c solid;
+    color: #222c3c;
+    appearance: none;
+}
+
+#toCalculate:hover{
+    background-color: whitesmoke;
+    transition: 0.25s ease;
+}
+
+#toCalculate:focus{
+    background-color: whitesmoke;
+}
+
+/*Calculate button*/
+#calcButton{
+    order: 2;
+    height:100%;
+    width: 80%;
+    cursor: pointer;
+}
+
+#calcButton>p{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 5%;
+    color: #222c3c;
+}
+
+#calcButton:hover{
+    background-color: whitesmoke;
+    transition: 0.25s ease;
+}
+
+#outputContainer{
+    background-color:inherit;
+    transition: 0.25s ease;
+    border-top: 2px #222c3c solid;
+    border-right: 2px #222c3c solid;
+    font-size: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+}
+
+.symbol{
+    border-right: 2px #222c3c solid;
+    order: 1;
+    width:30%;
+}
+
+.usrInput{
+    order: 2;
+    width:70%;
+}
+
+/*Primary letter*/
+.symbol>p:nth-child(1){
+    font-weight: bold;
+    color:whitesmoke;
+    font-size: 100%;
+    display: inline-block;
+    margin-top: 15%;
+}
+
+/*Second letter*/
+.symbol>p:nth-child(2n+0){
+    font-size: 50%;
+    color:whitesmoke;
+    display: inline-block;
+    margin-top: 20%;
+}
+
+/*Output items*/
+#output{
+    order:1;
+    height:100%;
+    width:80%;
+}
+
+#output:hover{
+    background-color: inherit;
+    cursor: inherit;
+    color: whitesmoke;
+}
+
+#copyToClipboard{
+    order:2;
+    border-left: 2px #222c3c solid;
+    height:100%;
+    width:20%;
+    cursor: pointer;
+    transition: 0.25s ease;
+    background-color: inherit;
+}
+
+#copyToClipboard:hover{
+    transition: 0.25s ease;
+    background-color: whitesmoke;
+}
+
+#clipboardImage{
+    width: 50%;
+    height: 100%;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass</title>
+    <link type ="text/css" href="algebraCalc.css" rel="stylesheet">
+</head>
+<body onload="calcMode()">
+    <!--Calculator UI-->
+    <div id="contentWrapper">
+        <!--Calaculator operands-->
+        <div id="aSymbolContainer" class="operationContainer">
+            <div id="aSymbol"  class="symbol">
+                <p>a</p>
+            </div>  
+            <div id="aInputContainer" class="usrInput">
+                <input type="number" name="aInput" value="">
+            </div>
+        </div>
+        <div id="bxSymbolContainer" class="operationContainer">
+            <div id="bxSymbol"  class="symbol">
+                <p>b</p>
+            </div>
+            <div id="bxInputContainer" class="usrInput">
+                <input type="number" name="bInput">
+            </div>
+        </div>
+        <div id="xxSymbolContainer" class="operationContainer">
+            <div id="xxSymbol"  class="symbol">
+                <p>x</p>
+            </div>
+            <div id="xxInputContainer" class="usrInput">
+                <input type="number" name="xxInput">
+            </div>
+        </div>
+        <div id="cSymbolContainer" class="operationContainer">
+            <div id="cSymbol"  class="symbol">
+                <p>c</p>
+            </div>
+            <div id="cInputContainer" class="usrInput">
+                <input type="number" name="cInput">
+            </div>
+        </div>
+        <div id="equalSymbolContainer" class="operationContainer">
+            <div id="equalSymbol" class="symbol">
+                <p>=</p>
+            </div>
+            <div id="equalInputContainer" class="usrInput">
+                <input type="number" name="equalInput">
+            </div>
+        </div>
+        <div id="outputSymbolContainer" class="operationContainer">
+            <div id="calcContainer">
+                <select id="toCalculate">
+                    <option>Linear</option>
+                    <option>Quadratic</option>
+                </select>
+                <div id="calcButton" onclick="calc()"><!--this funciton needs to change-->
+                    <p>Calculate</p>
+                </div>
+            </div>
+            <div id="outputContainer">
+                <input id="output" disabled="disabled" value="">
+                <div id="copyToClipboard" onclick="copyToClipBoard()">
+                    <img id="clipboardImg" src="smallerClipboard.png" alt="Copy To Clipboard">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="algebraCalc3.js"></script>
+</body>
+</html>
+
+
